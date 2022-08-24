@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap');
+
+/* 마진 패딩 초기화 */
+html{
+   
+    overflow-y: scroll;
+    min-width: 1430px;
+}
+* {
+    padding: 0;
+    margin: 0;
+    
+    outline: none;
+}
+
+/* 페이지 기본 글꼴과 크기 설정 */
+body {
+    font-family: "맑은 고딕", "돋움"sans-serif;
+    font-size: 14px;
+    color: #333333;
+}
+
+img {
+    border: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* <a> 태그 기본 설정 */
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+a:link {
+    text-decoration: none;
+    color: #222222;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #222222;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #222222;
+}
+
+a:active {
+    text-decoration: none;
+    color: #222222;
+}
+
+/* 상단 헤더 */
+#top {
+    position: relative;
+    width: 1200px;
+    height: 80px;
+    margin: 0 auto;
+}
+
+#top h1 {
+    position: absolute;
+    top: -50px;
+    left: 0px;
+    font-size: 20px;
+  
+    height: 130px;
+}
+
+#top h1 a {
+    font-family: 'Henny Penny', cursive;
+    color: #999999;
+    height: 130px;
+}
+#top h1 a img{
+    
+    top: 50px;    
+    position: relative;
+    
+ 
+    
+}
+
+#top h2 {
+    position: absolute;
+    top: 27px;
+    left: 168px;
+    font-size: 16px;
+}
+
+#top h2 a {
+    color: #999999;
+}
+
+#top #top_menu {
+    float: right;
+    margin: 30px 40px 0 0;
+}
+
+#top #top_menu > li {
+    display: inline-block;
+    margin-top: 15px;
+}
+
+#menu_bar {
+    height: 48px;
+    background-color: #000000;
+    font-size: 16px;
+}
+
+#menu_bar>ul {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 10px 0 0 40px;
+   
+}
+
+#menu_bar>ul >li {
+    display: inline-block;
+    margin-left: 90px;
+    color: white;
+    font-weight: 400;
+    ;
+}
+/* 햄버거 */
+.ani_box{
+    left: -20px;
+    position: relative;
+    cursor: pointer;
+    float: left;
+   top: 4px;
+    
+    
+}
+.line1{
+    width: 30px;
+    height: 2px;
+    background-color: #ffffff;
+    position: relative;
+    transform: rotate(0deg);
+    transition: all 0.2s;
+}
+.line2{
+    width: 30px;
+    height: 2px;
+    background-color: #ffffff;
+    position: relative;
+    margin: 7px 0;
+    transition: all 0.2s;
+    opacity: 1;
+
+}
+.line3{
+    width: 30px;
+    height: 2px;
+    background-color: #ffffff;
+    position: relative;
+    transform: rotate(0deg);
+    transition: all 0.2s;
+}
+.ani_box.act .line1{
+    top: 10px;
+    transform: rotate(-45deg);
+    
+}
+.ani_box.act .line2{
+    opacity: 0;
+}
+.ani_box.act .line3{
+    top: -8px;
+    transform: rotate(45deg);
+    
+}
+
+
+
+
+#menu_bar>ul>li> a:link {
+    color: white;
+    padding: 0 30px;
+}
+
+#menu_bar>ul>li> a:hover {
+    color: white;
+    font-weight: 600;
+}
+
+#menu_bar>ul>li> a:visited {
+    color: white;
+}
+
+#menu_bar>ul>li> a:active {
+    color: white;
+}
+
+.toggle_menu{
+    width: 250px;
+    height: 400px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 147px;
+    display: none;
+   margin-left: -100px;
+}
+.toggle_menu .sub_menu{
+   display: block;
+  width: 100%;
+  height: 40px;
+  
+}
+.toggle_menu .sub_menu a{
+    display: block;
+    color: #000000;
+    text-align: center;
+font-size: 16px;
+margin-top: 10px;
+box-sizing: border-box;
+padding: 10px;
+}
+.toggle_menu .sub_menu a:hover{
+    color: #0072bc;
+}
+
+/* 메인 이미지 */
+#main_img_bar {
+    height: 215px;
+    text-align: center;
+    width: 100%;
+    background-color: #efefef;
+    background: url(../img/banner2.jpg) no-repeat;
+    background-size: cover;
+    margin-bottom: 50px;
+}
+
+#main_img_bar img {
+    margin-top: 0px;
+}
+
+/* 섹션 */
+.bannerimg{
+    background: url(../img/missha_banner.jpg) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 733px;
+}
+.section_wrt{
+    width: 1000px;
+    height: auto;
+    margin: 0 auto;
+   
+}
+.wrt_left{
+    width: 500px;
+    float: left;
+    height: 1300px;
+    margin-top: 80px;
+    
+}
+.wrt_right{
+    width: 500px;
+    float: right;
+    height: 1300px;
+    margin-top: 200px;
+}
+.center{
+    margin: 0 auto;
+    width: 300px;
+    height: 100%;
+    
+}
+
+.section_wrt:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.section_wrt h5{
+font-size: 38px;
+margin-top: 10px;
+}
+.section_wrt p{
+    font-size: 16px;
+    letter-spacing: -1px;
+    margin-bottom: 20px;
+}
+
+.img2,.img3{
+    width: 300px;
+    height: 300px;
+    margin-top: 50px;
+}
+
+/* 하단 푸터 */
+footer {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background-color: #000000;
+    margin-top: 50px;
+
+}
+
+#footer_wrap {
+    margin: 0 auto;
+    width: 1440px;
+    height: 300px;
+
+
+
+}
+
+#footer_logo {
+
+    width: 390px;
+
+    margin-top: -70px;
+  padding-left: 100px;
+    float: left;
+    box-sizing: border-box;
+}
+
+footer .logo_gray img {
+   width: 220px;
+
+
+
+}
+
+footer #footer_write {
+
+    width: 900px;
+    height: 270px;
+    padding-top: 50px;
+    box-sizing: border-box;
+ margin-left: -50px;
+    float: left;
+
+
+}
+
+footer #footer_write .stylep {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+
+
+}
+
+footer .stylep a {
+    color: #ffffff;
+    font-weight: bold;
+    
+}
+
+footer .stylep a:hover {
+    color: #a1a1a1;
+}
+
+footer .stylep .copy {
+    color: #a1a1a1;
+    font-size: 14px;
+}
+
+footer .mediap {
+    display: none;
+}
+
+#footer_form {
+    display: none;
+}
